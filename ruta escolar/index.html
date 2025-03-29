@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Escolar - Sistema de Gestión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚍 Ruta Escolar</h1>
+        <p>Monitoreo en tiempo real para estudiantes, conductores y administradores</p>
+    </header>
+
+    <main>
+        <!-- Pantalla de inicio de sesión -->
+        <section class="login" id="login-section">
+            <label for="userType">Selecciona tu rol:</label>
+            <select id="userType">
+                <option value="student">Estudiante</option>
+                <option value="driver">Conductor</option>
+                <option value="admin">Administrador</option>
+            </select>
+            <button onclick="login()">Ingresar</button>
+        </section>
+
+        <!-- Dashboard con información dinámica -->
+        <section id="dashboard" class="hidden">
+            <button class="logout" onclick="logout()">Salir</button>
+            <div id="info" class="container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ruta Escolar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
